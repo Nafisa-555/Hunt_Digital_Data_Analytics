@@ -12,14 +12,11 @@ Analyze traffic data of 6 apps to understand patterns behind IVT (Invalid Traffi
 - Compared IVT vs Non-IVT apps
 - Computed correlation and key ratios
 - Exported analysis results to Excel
-
-### Key Insights
-- Higher `requests_per_idfa` and `idfa_ua_ratio` are strong indicators of Invalid Traffic.
-- IVT apps show lower `impressions_per_idfa`, suggesting non-human activity.
-- A stable `idfa_ip_ratio` near 1 is a sign of genuine user traffic.
-
-### Output Files
-- `hunt_digital_analysis_results.xlsx` – contains Summary, IVT vs Non-IVT, and Correlation.
+### Key Findings
+- The analysis suggests clear behavioral differences between legitimate and IVT-affected traffic:
+- Higher Request Rates: IVT-affected apps generally have a higher requests_per_idfa and idfa_ua_ratio, which suggests automated or spoofed requests from non-human sources.
+- Fewer Impressions: impressions_per_idfa are lower for IVT apps. This indicates that the high volume of requests does not translate into real ads being shown to users.
+- Stable Baseline: Non-IVT apps (where IVT == 0) show stable and consistent ratios close to 1, which aligns with normal, expected user behavior.
 
 ### Tools Used
 - Python (Pandas, Matplotlib, Seaborn)
