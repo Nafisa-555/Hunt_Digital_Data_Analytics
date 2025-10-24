@@ -1,6 +1,6 @@
 # Hunt Digital Media – Data Analytics Assignment
 
-### Bg Author
+### By-
 **Nafisa Ansari**
 
 ### Objective
